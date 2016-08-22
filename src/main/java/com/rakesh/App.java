@@ -21,9 +21,6 @@ public class App
             Connection con= DriverManager.getConnection(
                     "jdbc:mysql://172.17.0.2:3306/sample","mysql","mysql");
 
-
-//here sonoo is database name, root is username and password
-
             Statement stmt=con.createStatement();
 
             ResultSet rs=stmt.executeQuery("select * from information_schema.tables");
